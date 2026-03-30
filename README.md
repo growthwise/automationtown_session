@@ -36,6 +36,44 @@ If you are comfortable navigating a terminal, run the command
 
 This will clone the whole project to the current directory you are in. 
 
+If you also want to ensure that you can "push" to your own Github make sure you authenticate to github from the command line.
+
+Normally the best way to do this is 
+
+``` gh auth login ```
+
+Then select "Github"
+
+<img width="472" height="49" alt="image" src="https://github.com/user-attachments/assets/01e26c11-dd3e-44c5-96b5-6f41134d91d1" />
+
+For the next question answer "HTTPS"
+
+<img width="750" height="66" alt="image" src="https://github.com/user-attachments/assets/d70bccae-8817-4ec8-a0b5-5b73bdac0419" />
+
+Say that you do want to use your github credentials to auth, this will use the web interface to authenticate. 
+
+<img width="535" height="51" alt="image" src="https://github.com/user-attachments/assets/38fcf059-1d7e-45f7-aa6a-76482e73efde" />
+
+For the option of login say login with web browser
+
+<img width="639" height="100" alt="image" src="https://github.com/user-attachments/assets/3a1b7e83-779e-452b-9f1d-d31d77eec7b5" />
+
+After this, it will prompt inside the terminal to open github in your browser. Remember you need to copy and paste this link into your browser.
+
+Once on the page, enter the provided code and click continue to authorise. You will then be able to click Authorize github to finalise the link. 
+
+If you have MFA enabled you will need to enter this as well. Once connected you will see this
+
+<img width="489" height="205" alt="image" src="https://github.com/user-attachments/assets/b79f385e-0634-4328-a0c0-3d338ddf1827" />
+
+Your terminal will also update with messages stating a successful login. 
+
+<img width="530" height="61" alt="image" src="https://github.com/user-attachments/assets/361526ac-2dc6-45db-abd8-b39effec3743" />
+
+If you want to test and confirm your connection you can do so by issuing the following command
+
+``` gh repo list username ``` remembering to replace username with your Github username. If you just created an account, it should show no repositories, Otherwise, it will show anything you've created. 
+
 ## Opening Project in VS Code ##
 
 Now that you have downloaded all the project files, we suggest opening the project in VSCode. Open VSCode and then in the window that opens click on "Open" 
