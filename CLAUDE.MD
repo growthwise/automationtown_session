@@ -1,18 +1,22 @@
 
 # CLAUDE.md — Accounting Firm Website Builder
 
-> 👋 **Before we get started — this file has three placeholders that need to be filled in with your details:**
+> 👋 **Before we get started, Claude will ask you three quick questions — one at a time — to personalise your site.**
 >
-> - `{{FIRM_NAME}}` — the name of your accounting firm (e.g. *Smith & Associates CPA*)
-> - `{{WEBSITE_URL}}` — your intended domain, used for display purposes only (e.g. *www.smithcpa.com*)
-> - `{{STORY}}` — a short description of your firm's background, personality, or what makes it different (e.g. *"We started as a small family practice in Austin in 2008 and now specialise in serving e-commerce businesses and freelancers. We're known for being straight-talking and genuinely proactive — our clients hear from us before tax season, not during it."*)
+> Claude must ask these questions **sequentially**, waiting for a response to each before moving on:
 >
-> The `{{STORY}}` placeholder is what makes your site feel like *yours* rather than a generic template. The more honest and specific you are, the better the result.
+> **Question 1:** *"What's the name of your accounting firm?"*
+> → Stored as `{{FIRM_NAME}}` (e.g. *Smith & Associates CPA*)
 >
-> **To personalise this project, simply tell Claude:**
-> *"My firm is called [name], my website is [URL], and here's our story: [your story]"*
+> **Question 2:** *"What's your current website URL? (If you don't have one yet, what domain are you planning to use?)"*
+> → Stored as `{{WEBSITE_URL}}` (e.g. *www.smithcpa.com*)
+> → **Important:** Claude will visit this URL to analyse the firm's existing branding — see [Brand Extraction](#brand-extraction) below.
 >
-> Claude will use those details to build a website tailored to your firm.
+> **Question 3:** *"Tell me a bit about your firm — how it started, what kind of clients you serve, and what makes you different."*
+> → Stored as `{{STORY}}`
+> → The more honest and specific the answer, the better the site will feel. This is what makes the result *theirs* rather than a generic template.
+>
+> **Do not ask all three at once.** Ask one, wait for the answer, acknowledge it briefly, then ask the next. This keeps the conversation natural and avoids overwhelming the user.
 
 ---
 
@@ -39,6 +43,28 @@ Check the `images/` folder for any brand assets before building. These may inclu
 - **Other assets** — photos, icons, or graphics that should be incorporated into the design
 
 Reference these using relative paths (e.g. `<img src="images/logo.png">`). If the `images/` folder is empty or an asset is missing, design around it gracefully — use a text-based logo treatment or CSS-generated visuals rather than broken image placeholders.
+
+---
+
+## Brand Extraction
+
+After the user provides their `{{WEBSITE_URL}}` (Question 2), Claude must **visit the URL and analyse the existing site** to extract branding cues. This step happens automatically — do not ask the user for permission, just do it after they answer Question 2.
+
+### What to extract
+
+Use `WebFetch` to retrieve the homepage HTML and inspect it for:
+
+- **Colors** — primary brand color, accent colors, background tones. Look in inline styles, CSS custom properties (`--brand-color`, etc.), `<meta name="theme-color">`, and any linked stylesheets you can access.
+- **Fonts** — font families used for headings and body text. Check Google Fonts `<link>` tags, `@import` statements, and `font-family` declarations.
+- **Logo** — note the logo URL/format if visible (the user can supply the file separately for `images/`).
+- **Overall visual tone** — is the existing site light/dark, minimal/busy, warm/cool? Note this as a style cue.
+
+### How to use the extracted branding
+
+- **Present a summary** to the user before the theme selection step: *"I took a look at your current site and picked up the following branding: [colors], [fonts], [tone]. I'll use these to guide the theme."*
+- **During theme selection (Step 2)**, use the extracted branding to **recommend a theme** from the theme showcase that best complements the firm's existing look — or suggest a custom theme built from their current palette and fonts.
+- **If the URL is unreachable or has no existing site** (e.g. a parked domain, 404, or the user said they don't have one yet), skip extraction gracefully and proceed to the theme showcase as normal.
+- The extracted branding should **inform** the design, not dictate it rigidly. The new site should feel like a polished evolution of the firm's existing brand, not a pixel-perfect copy.
 
 ---
 
@@ -146,4 +172,4 @@ Save the output to: `output/index.html`
 
 ## Reminder
 
-If `{{FIRM_NAME}}`, `{{WEBSITE_URL}}`, or `{{STORY}}` still appear as literal placeholders when you read this, **stop and ask the user to provide their firm name, website URL, and a brief description of their firm's story** before proceeding. Do not generate a site using the placeholder text as content.
+If `{{FIRM_NAME}}`, `{{WEBSITE_URL}}`, or `{{STORY}}` still appear as literal placeholders when you read this, **stop and begin the onboarding questions (one at a time, as described at the top of this file)** before proceeding. Do not generate a site using the placeholder text as content. Do not ask all three questions at once.

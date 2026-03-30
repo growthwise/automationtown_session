@@ -1,1 +1,1 @@
-Add your logo or any other relevant information in this directory
+Add your logo and any other brand assets to this folder
