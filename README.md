@@ -118,9 +118,21 @@ If you want to do something completely different the structure is the same:
 
 - Create a new folder to work from
 - Create a CLAUDE.MD file within that folder, outline what you want to be able to create, remember you can use Claude desktop app or the claude online chat initially to create this
-- When your CLAUDE.MD is ready, issue the same "Read and get started" chat and watch claude start its process. 
+- When your CLAUDE.MD is ready, issue the same "Read and get started" chat and watch claude start its process.
 
-## Links to Skill Resources
+### Helpful Slash Commands ###
+
+Many of the things you can see in the web interface are accessible in Claude code 
+
+- ```/clear``` Clears context
+
+- ```/usage``` Shows model usage, in VSCode you will see "Account Usage" click this to see usage
+
+- ```/model``` Adjust which model you are using for your coding tasks
+
+- ```/stats``` A fun one, shows you how much you've used Claude over time
+
+#### Links to Skill Resources ####
 
 We are providing these so you are aware of where each skill was retrieved from
 
