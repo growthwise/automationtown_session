@@ -73,7 +73,7 @@ Once you are in your terminal regardless of operating system the steps you shoul
 - Change directory to the project downloaded or cloned
 - Once in that directory, type claude and press enter
 
-## Now the fun starts!##
+## Now the fun starts! ##
 
 ### Explanation of the Project ###
 
