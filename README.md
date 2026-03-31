@@ -14,13 +14,15 @@ We recommend using Github Desktop or Git. Github Desktop can be installed from h
 
 Alternatively. Git can be installed using these instructions https://docs.github.com/en/get-started/git-basics/set-up-git
 
-* It is not actually necessary to use Git for this tutorial, however it is a useful tool that you should familiarise yourself with *
+*It is not actually necessary to use Git for this tutorial, however it is a useful tool that you should familiarise yourself with*
 
 ## Setting Up Your Environment ##
 
 ### Direct Download of Project from Github Repo ###
 
-If you're not comfortable with using git yet - on this page you can click the "Code" button then either Download Zip. This will download a zip file to your computer. 
+If you're not comfortable with using git yet - on this page you can click the "Code" button on the top right of the page then either Download Zip. This will download a zip file to your computer. 
+
+<img width="408" height="348" alt="image" src="https://github.com/user-attachments/assets/c0bf2288-d1a0-4137-a623-1b1dac977d1f" />
 
 Unzip the file, and the extracted folder has all files that you need
 
