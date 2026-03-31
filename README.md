@@ -113,6 +113,21 @@ Once you are in your terminal regardless of operating system the steps you shoul
 - Change directory to the project downloaded or cloned
 - Once in that directory, type claude and press enter
 
+Some tips depending on your system
+
+* Mac: Once you open terminal to move into the cloned directory type cd then drag your cloned folder onto the terminal window and it will fill the path, press enter to enter the directory
+
+<img width="595" height="108" alt="image" src="https://github.com/user-attachments/assets/436a06d8-e6d1-449e-9e02-fa0ebfad93a2" />
+
+* Windows: by default normally if you open command prompt it will open into your user folder e.g. C:\Users\username if you downloaded the repository to your downloads folder you can navigate to it using the commands below
+
+``` cd Downloads\automation_session ``` <--- press enter after typing. 
+
+If it is in any other directory you will need to change directory to where it was downloaded. 
+
+*Remember terminals have autocomplete, if you don't want to type an entire path press tab as you type to get autocomplete suggestions*
+
+
 ## Now the fun starts! ##
 
 ### Explanation of the Project ###
