@@ -173,6 +173,10 @@ Or
 
 ``` I don't like the colour schemed, can you try a different theme using the theme-factory skill ```
 
+And... as a bonus because everyone hates em dashes we included a skill that's not used but you can request Claude to utilise it. We kept this one separate so you can explore the concept of triggering a skill. 
+
+``` Use the humanizer skill to update the text on the website ```
+
 * hint: Theme factory directory has a PDF in it that can show you each theme, choose your own adventure... 
 * If you like as well, ask Claude to use the seo-audit-skill to audit your existing website
 
@@ -185,6 +189,8 @@ If you want to do something completely different the structure is the same:
 - Create a new folder to work from
 - Create a CLAUDE.MD file within that folder, outline what you want to be able to create, remember you can use Claude desktop app or the claude online chat initially to create this
 - When your CLAUDE.MD is ready, issue the same "Read and get started" chat and watch claude start its process.
+
+Want some further inspriation on what you may be able to build? Check out Chad's linkedin post for some ideas here https://www.linkedin.com/feed/update/urn:li:activity:7444427727610351617/
 
 ### Helpful Slash Commands ###
 
