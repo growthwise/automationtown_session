@@ -86,6 +86,17 @@ Select the folder you extracted or cloned earlier and click open.
 
 On the left hand side now, you will have visibility of all the files from the project. 
 
+You will likely also have a "Chat" window that shows on the right as shown below
+
+<img width="300" height="202" alt="image" src="https://github.com/user-attachments/assets/326eae37-fa1d-4fd6-a174-142c47bcda5e" />
+
+You can close the chat window to avoid confusion, Claude will be in its own chat tab. 
+
+*You May also see suggestions in VSCode about installing recommended extensions, you can ignore these, for example the one below that will show due to a PDF being in the project*
+
+<img width="1393" height="302" alt="image" src="https://github.com/user-attachments/assets/84948404-b178-4402-98ef-50589166efad" />
+
+
 ### VSCode Extension ###
 
 Now you're in VSCode if you want to use Claude within it go here https://code.claude.com/docs/en/vs-code and download the extension. Once installed it will show as a small icon you can click, and then you will see a familiar chat window. 
