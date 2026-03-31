@@ -155,7 +155,9 @@ We have structured this project so that you can familiarise yourself with some c
 
 ### What Happens Now? ###
 
-We aimed to have this project setup as a "turnkey" setup. To get started all you need to do is either in your terminal, or in your claude chat window in VSCode type the following and presss enter:
+*Before commencing below, if you are concernned with token usage, click the / button in Claude's Chat window in VSCode and select Sonnet as the model instead of Default, if you are using the terminal you can type /model and select Sonnet from there*
+
+We aimed to have this project setup as a "turnkey" setup. To get started all you need to do is either in your terminal (if you are using terminal make sure you launch claude from the cloned directory), or in your claude chat window in VSCode type the following and presss enter:
 
 ``` Read CLAUDE.MD and get started ```
 
@@ -173,7 +175,7 @@ Or
 
 ``` I don't like the colour schemed, can you try a different theme using the theme-factory skill ```
 
-And... as a bonus because everyone hates em dashes we included a skill that's not used but you can request Claude to utilise it. We kept this one separate so you can explore the concept of triggering a skill. 
+And... as a bonus because everyone hates em dashes we included a skill that doesn't get used in the initial site build but you can request Claude to utilise it. We kept this one separate so you can explore the concept of triggering a skill. 
 
 ``` Use the humanizer skill to update the text on the website ```
 
