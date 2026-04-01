@@ -132,7 +132,7 @@ Some tips depending on your system
 
 * Windows: by default normally if you open command prompt it will open into your user folder e.g. C:\Users\username if you downloaded the repository to your downloads folder you can navigate to it using the commands below
 
-``` cd Downloads\automation_session ``` <--- press enter after typing. 
+``` cd Downloads\automationtown_session ``` <--- press enter after typing. 
 
 If it is in any other directory you will need to change directory to where it was downloaded. 
 
